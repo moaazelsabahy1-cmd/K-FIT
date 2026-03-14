@@ -18,6 +18,14 @@ export default function Header() {
         <h1>
           <span>MAKE</span> YOUR BODY SHAPE
         </h1>
+
+        <motion.button
+          className="btn"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          Get Started
+        </motion.button>
       </motion.div>
 
       <motion.div

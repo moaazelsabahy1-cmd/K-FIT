@@ -196,11 +196,8 @@ body {
 }
 
 .header__image img {
-max-width: 480px;
-margin: auto;
-padding:9px;
-padding-bottom: 6px;
-
+  max-width: 350px;
+  margin: auto;
 }
 
 .class__container {

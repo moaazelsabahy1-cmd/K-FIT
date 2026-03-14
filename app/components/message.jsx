@@ -23,16 +23,15 @@ export default function Message() {
         transition={{ duration: 0.8, delay: 0.2 }}
         viewport={{ once: true }}
       >
-        Hi ~ I'm Karim
+        Hi  I'm Karim
         <br /><br />
         Whether your goal is fat loss, building muscle, or simply improving
-        your overall fitness — you're in the right place.
-        <br /><br />
+        your overall fitness  you're in the right place.
         I offer fully customized training and nutrition plans tailored to your
         lifestyle and goals, with continuous support and expert guidance every
         step of the way.
         <br /><br />
-        Let's work together to unlock your full potential — starting today.
+        Let's work together to unlock your full potential starting today.
       </motion.p>
 
     </section>
