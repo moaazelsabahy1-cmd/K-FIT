@@ -2,8 +2,11 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Header() {
+  const t = useTranslations("hero");
+
   return (
     <section className="section__container header__container">
       <motion.div
@@ -16,15 +19,16 @@ export default function Header() {
         <span className="bg__blur header__blur"></span>
 
         <h1>
-          <span>MAKE</span> YOUR BODY SHAPE
+          <span>{t("make")}</span> {t("title")}
         </h1>
 
         <motion.button
           className="btn"
+          type="button"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          Get Started
+          {t("getStarted")}
         </motion.button>
       </motion.div>
 
@@ -36,7 +40,7 @@ export default function Header() {
       >
         <Image
           src="/images/photo_2025-12-18_22-57-32.jpg"
-          alt="header"
+          alt={t("imageAlt")}
           width={500}
           height={500}
         />

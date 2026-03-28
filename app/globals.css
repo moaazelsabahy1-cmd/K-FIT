@@ -248,6 +248,45 @@ body {
   font-size: 1.2rem;
   line-height: 1.9;
   color: var(--text-light);
+  white-space: pre-line;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.lang-switcher__select {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.lang-switcher__select option {
+  background: #111;
+  color: var(--white);
+}
+
+.footer-col ul li a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: var(--secondary-color);
 }
 
 .workout__grid {

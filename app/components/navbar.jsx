@@ -2,10 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
+import LanguageSwitcher from "./language-switcher";
 
 export default function Navbar() {
+  const t = useTranslations("nav");
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
@@ -32,7 +34,7 @@ export default function Navbar() {
       <button
         className="nav__toggle"
         type="button"
-        aria-label="Toggle navigation"
+        aria-label={t("toggleNav")}
         onClick={toggleMenu}
       >
         <span className={isOpen ? "nav__toggle-line open" : "nav__toggle-line"} />
@@ -42,24 +44,28 @@ export default function Navbar() {
 
       <ul className={isOpen ? "nav__links nav__links--open" : "nav__links"}>
         <li className="link" onClick={closeMenu}>
-          <Link href="/">Home</Link>
+          <Link href="/">{t("home")}</Link>
         </li>
         <li className="link" onClick={closeMenu}>
-          <Link href="/program">Program</Link>
+          <Link href="/program">{t("program")}</Link>
         </li>
         <li className="link" onClick={closeMenu}>
-          <Link href="/service">Service</Link>
+          <Link href="/service">{t("service")}</Link>
         </li>
         <li className="link" onClick={closeMenu}>
-          <Link href="/about">About</Link>
+          <Link href="/about">{t("about")}</Link>
         </li>
         <li className="link" onClick={closeMenu}>
-          <Link href="/prices">Prices</Link>
+          <Link href="/prices">{t("prices")}</Link>
         </li>
-     
+        <li className="link nav__lang-item">
+          <LanguageSwitcher />
+        </li>
       </ul>
 
-      <button className="btn nav__cta-desktop">Join Now</button>
+      <button type="button" className="btn nav__cta-desktop">
+        {t("joinNow")}
+      </button>
     </nav>
   );
 }

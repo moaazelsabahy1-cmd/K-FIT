@@ -1,29 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
-const reviews = [
-  {
-    name: "Ahmed Hassan",
-    image: "images/client1.jpg",
-    review:
-      "Amazing coaching! I lost 10kg in 3 months thanks to the personalized plan and constant support.",
-  },
-  {
-    name: "Sara Mohamed",
-    image: "images/young-fitness-girl-black-sportswear-with-headband-with-serious-face-with-crossed-arms-standing-white-wall.jpg",
-    review:
-      "The nutrition plan and workouts were perfect for me. I feel stronger and healthier than ever!",
-  },
-  {
-    name: "Omar Khaled",
-    image: "images/front-view-man-training-with-kettlebell.jpg",
-    review:
-      "Very professional coach. Always available and motivating. Highly recommended!",
-  },
+const REVIEW_KEYS = ["0", "1", "2"];
+const REVIEW_IMAGES = [
+  "images/client1.jpg",
+  "images/young-fitness-girl-black-sportswear-with-headband-with-serious-face-with-crossed-arms-standing-white-wall.jpg",
+  "images/front-view-man-training-with-kettlebell.jpg",
 ];
 
 export default function Reviews() {
+  const t = useTranslations("reviews");
+
   return (
     <section className="reviews">
       <motion.h2
@@ -32,13 +21,13 @@ export default function Reviews() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Clients Reviews
+        {t("title")}
       </motion.h2>
 
       <div className="reviews-container">
-        {reviews.map((client, index) => (
+        {REVIEW_KEYS.map((key, index) => (
           <motion.div
-            key={index}
+            key={key}
             className="review-card"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -46,13 +35,13 @@ export default function Reviews() {
             transition={{ delay: index * 0.2 }}
             viewport={{ once: true }}
           >
-            <img src={client.image} alt={client.name} />
+            <img src={`/${REVIEW_IMAGES[index]}`} alt={t(`items.${key}.name`)} />
 
-            <h3>{client.name}</h3>
+            <h3>{t(`items.${key}.name`)}</h3>
 
             <div className="stars">★★★★★</div>
 
-            <p>{client.review}</p>
+            <p>{t(`items.${key}.text`)}</p>
           </motion.div>
         ))}
       </div>

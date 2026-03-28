@@ -1,10 +1,11 @@
-import Hero from "./components/hero";
-import Message from "./components/message";
-import Content from "./components/content";
-import Program from "./components/program";
-import Services from "./components/services";
-import Prices from "./components/prices";
-import Reviews from"./components/reviews";
+import Hero from "../components/hero";
+import Message from "../components/message";
+import Content from "../components/content";
+import Program from "../components/program";
+import Services from "../components/services";
+import Prices from "../components/prices";
+import Reviews from "../components/reviews";
+
 export default function Home() {
   return (
     <main>

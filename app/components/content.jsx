@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function ClassSection() {
+  const t = useTranslations("content");
+
   return (
     <section className="section__container class__container">
-
       <motion.div
         className="class__image"
         initial={{ opacity: 0, x: -100 }}
@@ -18,7 +20,7 @@ export default function ClassSection() {
 
         <Image
           src="/images/photo_2025-12-18_23-24-35.jpg"
-          alt="class"
+          alt={t("imageAlt")}
           width={400}
           height={500}
           className="class__img-1"
@@ -32,28 +34,19 @@ export default function ClassSection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <h2 className="section__header">
-          THE CLASS YOU WILL GET HERE
-        </h2>
+        <h2 className="section__header">{t("title")}</h2>
 
-        <p>
-          Led by our team of expert and motivational instructors, "The Class You
-          Will Get Here" is a high-energy, results-driven session that combines
-          a perfect blend of cardio, strength training, and functional
-          exercises. Each class is carefully curated to keep you engaged and
-          challenged, ensuring you never hit a plateau in your fitness
-          endeavors.
-        </p>
+        <p>{t("body")}</p>
 
         <motion.button
           className="btn"
+          type="button"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          Join now
+          {t("joinNow")}
         </motion.button>
       </motion.div>
-
     </section>
   );
 }

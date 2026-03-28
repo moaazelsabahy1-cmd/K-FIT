@@ -1,4 +1,4 @@
-import Program from "../components/program";
+import Program from "../../components/program";
 
 export default function ProgramPage() {
   return (

@@ -1,0 +1,162 @@
+{
+  "metadata": {
+    "title": "K FIT — Coach Karim",
+    "description": "Personal training and nutrition coaching"
+  },
+  "nav": {
+    "home": "Home",
+    "program": "Program",
+    "service": "Service",
+    "about": "About",
+    "prices": "Prices",
+    "joinNow": "Join Now",
+    "toggleNav": "Toggle navigation",
+    "language": "Language"
+  },
+  "hero": {
+    "make": "MAKE",
+    "title": "YOUR BODY SHAPE",
+    "getStarted": "Get Started",
+    "imageAlt": "Hero"
+  },
+  "message": {
+    "title": "MESSAGE FOR YOU",
+    "body": "Hi, I'm Karim.\n\nWhether your goal is fat loss, building muscle, or simply improving your overall fitness — you're in the right place.\nI offer fully customized training and nutrition plans tailored to your lifestyle and goals, with continuous support and expert guidance every step of the way.\n\nLet's work together to unlock your full potential starting today."
+  },
+  "content": {
+    "title": "THE CLASS YOU WILL GET HERE",
+    "body": "Led by our team of expert and motivational instructors, \"The Class You Will Get Here\" is a high-energy, results-driven session that combines a perfect blend of cardio, strength training, and functional exercises. Each class is carefully curated to keep you engaged and challenged, ensuring you never hit a plateau in your fitness endeavors.",
+    "joinNow": "Join now",
+    "imageAlt": "Class"
+  },
+  "program": {
+    "title": "PROGRAM PLAN",
+    "startWorkout": "Start Workout",
+    "day1": {
+      "title": "Day 1 — Chest & Back",
+      "exercises": [
+        "Cable Bench Press",
+        "T-Bar Row",
+        "Incline Dumbbell Bench Press",
+        "Lat Pulldown",
+        "Chest Fly Machine",
+        "Cable Row"
+      ]
+    },
+    "day2": {
+      "title": "Day 2 — Shoulder & Arms",
+      "exercises": [
+        "Dumbbell Lateral Raise",
+        "Cable Front Raise",
+        "Cable Lateral Raise",
+        "Dumbbell Press",
+        "Biceps Cable Curl",
+        "Tricep Rope",
+        "Dumbbell Hammer",
+        "Pulley Overhead"
+      ]
+    },
+    "day3": {
+      "title": "Day 3 — Legs",
+      "exercises": [
+        "Calf Raises Press",
+        "Smith Hack Squats",
+        "Leg Press",
+        "Leg Curl",
+        "Deadlift"
+      ]
+    }
+  },
+  "services": {
+    "title": "My Coaching Services",
+    "items": {
+      "0": {
+        "title": "24/7 Coach Support",
+        "desc": "Stay connected with your coach anytime for guidance, motivation, and quick answers."
+      },
+      "1": {
+        "title": "Custom Workout Plan",
+        "desc": "A fully personalized training program designed based on your goals and fitness level."
+      },
+      "2": {
+        "title": "Nutrition Plan",
+        "desc": "A structured nutrition plan to help you burn fat, gain muscle, and improve health."
+      },
+      "3": {
+        "title": "Progress Tracking",
+        "desc": "Weekly check-ins and feedback to make sure you're always progressing."
+      }
+    }
+  },
+  "prices": {
+    "title": "OUR PRICING PLAN",
+    "subtitle": "Our pricing plan comes with various membership tiers, each tailored to cater to different preferences and fitness aspirations.",
+    "joinNow": "Join Now",
+    "plans": {
+      "0": {
+        "title": "Basic Plan",
+        "price": "$16",
+        "features": ["Smart workout plan", "At home workouts"]
+      },
+      "1": {
+        "title": "Weekly Plan",
+        "price": "$25",
+        "features": ["PRO Gyms", "Smart workout plan", "At home workouts"]
+      },
+      "2": {
+        "title": "Monthly Plan",
+        "price": "$45",
+        "features": [
+          "ELITE Gyms & Classes",
+          "PRO Gyms",
+          "Smart workout plan",
+          "At home workouts",
+          "Personal Training"
+        ]
+      }
+    }
+  },
+  "reviews": {
+    "title": "Clients Reviews",
+    "items": {
+      "0": {
+        "name": "Ahmed Hassan",
+        "text": "Amazing coaching! I lost 10kg in 3 months thanks to the personalized plan and constant support."
+      },
+      "1": {
+        "name": "Sara Mohamed",
+        "text": "The nutrition plan and workouts were perfect for me. I feel stronger and healthier than ever!"
+      },
+      "2": {
+        "name": "Omar Khaled",
+        "text": "Very professional coach. Always available and motivating. Highly recommended!"
+      }
+    }
+  },
+  "footer": {
+    "brand": "COACH KARIM",
+    "tagline": "Transform your body and lifestyle with professional coaching, personalized workout plans, and constant support.",
+    "quickLinks": "Quick Links",
+    "links": {
+      "home": "Home",
+      "services": "Services",
+      "pricing": "Pricing",
+      "reviews": "Reviews"
+    },
+    "servicesTitle": "Services",
+    "servicesList": {
+      "0": "Online Coaching",
+      "1": "Workout Programs",
+      "2": "Nutrition Plans",
+      "3": "Progress Tracking"
+    },
+    "follow": "Follow Me",
+    "social": {
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "whatsapp": "WhatsApp",
+      "tiktok": "TikTok"
+    },
+    "copyright": "© 2026 Coach Karim. All rights reserved."
+  }
+}
